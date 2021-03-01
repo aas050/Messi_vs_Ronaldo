@@ -1,0 +1,1223 @@
+<!doctype html>
+
+<HTML lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Messi vs Ronaldo</title>
+
+
+<meta name="description" content="Messi vs Ronaldo Project">
+<meta name="author" content="Project">
+
+
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/timeline.js"></script>
+<script src="https://code.highcharts.com/modules/funnel.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<link href="assets/cards.css" rel="stylesheet" />
+<link href="assets/arrow.css" rel="stylesheet" />
+<link href="assets/piegrid.css" rel="stylesheet" />
+<link href="assets/trophygrid.css" rel="stylesheet" />
+<link href="assets/pyramidchart.css" rel="stylesheet" />
+<link href="assets/cltrophy.css" rel="stylesheet" />
+<link href="assets/body.css" rel="stylesheet" />
+<link href="assets/finaldetail.css" rel="stylesheet" />
+<link href="assets/uefaclt.css" rel="stylesheet" />
+
+
+</head>
+
+<body style = "text-align: center;">
+
+<div class="grid-container">
+
+<div class="ronaldo">
+ <div class="flip-card" id = 'fc1' data-aos="fade-up" data-aos-duration="3000">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/ronaldo.jpg" alt="Ronalds" style="width:470px;height:830px;">
+      </div>
+      <div class="flip-card-back" id = 'fci1'>
+        <div style = "text-align: left; color:black; margin-bottom: 15px; margin-top: 25px;">Country: <img src = 'assets/port.png' style="width:60px;height:40px;vertical-align: bottom"> Portugal </img> </div>
+        
+        
+        
+        <div style = "text-align: left; color:black; margin-bottom: 15px;">Age: 34 </div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;">Club Career: </div>        
+        <div style = "text-align: left; color:black; margin-bottom: 15px;" id = 'roncareer'></div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;"> Career Goals: 707</div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;"> Net Worth: $460 Million</div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;"> Instagram Followers: 192 Million</div>
+
+
+
+        
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="messi">
+<div class="flip-card" id = 'fc2' data-aos="fade-down" data-aos-duration="3000">
+  <div class="flip-card-inner" id = 'fci2'>
+    <div class="flip-card-front">
+      <img src="assets/messi.png" alt="Ronalds" style="width:470px;height:830px;">
+    </div>
+    <div class="flip-card-back">
+        <div style = "text-align: left; color:black; margin-bottom: 15px; margin-top: 25px;">Country:  <img src = 'assets/arg.png' style="width:60px;height:40px;vertical-align: bottom"> Argentina </img> </div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;">Age: 32 </div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;">Club Career: </div>        
+        <div style = "text-align: left; color:black; margin-bottom: 15px;" id = 'mescareer'></div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;"> Career Goals: 684</div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;"> Net Worth: $400 Million</div>
+        <div style = "text-align: left; color:black; margin-bottom: 15px;"> Instagram Followers: 137 Million</div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="title" data-aos="zoom-in" data-aos-duration="3000">
+<br>
+<br>
+<br>
+  RONALDO
+  <br>
+&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; vs 
+
+
+<br>
+
+
+
+<div id = 'messititle'> MESSI </div> 
+
+</div>
+   
+</div>
+&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toint'> </img> 
+</div>
+
+<div id = 'pictureINT'>
+  <img src = 'assets/international.jpg' height = 950 width= 1450> </img> 
+</div>
+
+<div id = 'oneslide'>
+    <img src = 'slides/one.png' height = 950 width= 1450> </img> 
+</div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'fromINT'> </img> 
+</div>
+
+<div id = 'chartINT1' style = "height: 900px; width: 92%; text-align: center; display: inline-block; overflow:auto;" > </div>
+
+
+<div id = 'twoslide'>
+    <img src = 'slides/two.png' height = 950 width= 1450> </img> 
+</div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toparent'> </img> 
+</div>
+
+
+
+<div style = "text-align: center; font-family: 'Exo'; font-size: 40px;" id = 'mesronpie'> Friendly or Competitive Games? </div>
+
+
+<div class="parent">
+    <div class="div1" id = 'ronpie' style = "height: 900px; width: 70%; text-align: left; overflow:auto;"> </div>
+    <div class="div2" id = 'mespie' style = "height: 900px; width: 70%; text-align: right; overflow:auto;"> </div>
+</div>
+
+<div id = 'threeslide'>
+    <img src = 'slides/three.png' height = 950 width= 1450> </img> 
+</div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'tochartINT3'> </img> 
+</div>
+
+
+
+
+<div id = 'chartINT3' style = "height: 900px; width: 92%; text-align: center; display: inline-block; overflow:auto;" > </div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toleague'> </img> 
+</div>
+
+
+<div id = 'pictureLEG'>
+    <img src = 'assets/league.jpg' height = 950 width= 1450> </img> 
+</div>
+
+<div id = 'fourslide'>
+    <img src = 'slides/dour.png' height = 950 width= 1450> </img> 
+</div>
+
+<div id = 'fiveslide' style = "vertical-align: top;">
+    <img src = 'slides/five.png' height = 950 width= 1450> </img> 
+</div>
+
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'fromLEG'> </img> 
+</div>
+
+
+
+
+
+
+
+<div id = 'chartLEG1' style = "height: 900px; width: 92%; text-align: center; display: inline-block; overflow:auto;" > </div>
+
+<div id = 'sixslide'>
+    <img src = 'slides/six.png' height = 950 width= 1450> </img> 
+</div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toparent2'> </img> 
+</div>
+
+
+
+
+
+<div style = "text-align: center; font-family: 'Exo'; font-size: 50px;" id = 'leagtroph'> League Trophies </div>
+
+
+<div class = "parent6">
+  
+<div class = "div11" style = "text-align: left; font-family: 'Exo'; font-size: 40px;"> 
+Ronaldo
+</div>
+ 
+
+
+<div class = "div12" style = "text-align: right; font-family: 'Exo'; font-size: 40px;"> 
+    Messi
+  </div>
+</div>  
+
+
+
+
+<div class="parent2">
+   
+    <div class="div3" id = 'rontrophy' style = "text-align: left;">
+      <img src = 'assets/ronaldo_trophy.png' width = "300"> </img>
+    </div>
+    
+    <div class="div4" id = 'mestrophy'> 
+        <img src = 'assets/messi_trophy.png' width = "400"> </img>
+    </div>
+</div>
+
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toucl'> </img> 
+</div>
+
+<div id = 'pictureUCL'>
+    <img src = 'assets/ucl.jpg' height = 950 width= 1450> </img> 
+</div>
+
+<div id = 'sevenslide'>
+    <img src = 'slides/seven.png' height = 950 width= 1450> </img> 
+</div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'fromucl'> </img> 
+</div>
+ 
+
+
+<div id = 'chartUCL1' style = "height: 900px; width: 92%; text-align: center; display: inline-block; overflow:auto;" >
+
+</div>
+
+<div id = 'eightslide'>
+    <img src = 'slides/eight.png' height = 950 width= 1450> </img> 
+</div>
+
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toparent3'> </img> 
+</div>
+
+
+<div style = "text-align: center; font-family: 'Exo'; font-size: 50px;" id = 'pressure'> Goals Under Pressure  </div>
+<div style = "text-align: center; font-family: 'Exo'; font-size: 20px;" id = 'pressure_sub'> Source: <i>The Stats Zone   </i> </div>
+
+
+<div class="parent3">
+   
+    <div class="div5" id = 'ronpyramid' style = "height: 900px;">
+      
+    </div>
+    
+    <div class="div6" id = 'mespyramid' style = "height: 900px;"> 
+        
+    </div>
+</div>
+
+<div id = 'nineslide'>
+    <img src = 'slides/nine.png' height = 950 width= 1450> </img> 
+</div>
+
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'toparent4'> </img> 
+</div>
+
+
+
+
+<div style = "text-align: center; font-family: 'Exo'; font-size: 50px;" id = 'cltroph'> Champions League Trophies </div>
+
+
+
+<div class = "parent7">
+  
+    <div class = "div13" style = "text-align: left; font-family: 'Exo'; font-size: 40px;"> 
+    Ronaldo
+    </div>
+     
+    
+    
+    <div class = "div14" style = "text-align: right; font-family: 'Exo'; font-size: 40px;"> 
+        Messi
+      </div>
+    </div> 
+
+
+<div class="parent4">
+   
+    <div class="div7" id = 'roncl' style = "text-align: left;">
+        <img src = 'assets/ronaldo_cl.png' width = "400"> </img>
+
+    </div>
+    
+    <div class="div8" id = 'mescl' style = "text-align: right;"> 
+        <img src = 'assets/messi_cl.png' width = "400"> </img>
+    </div>
+</div>
+ 
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'tobody'> </img> 
+</div>
+
+
+
+
+
+<div id = 'picturebody'>
+    <img src = 'assets/body.jpg' height = 950 width= 1450> </img> 
+</div>
+
+
+<div id = 'tenslide'>
+    <img src = 'slides/ten.png' height = 950 width= 1450> </img> 
+</div>
+
+<div class="arrow bounce">
+    <img src = 'assets/arrow.svg' width="50" id = 'frombody'> </img> 
+</div>
+
+
+
+<div style = "text-align: center; font-family: 'Exo'; font-size: 40px;" id = 'bodytitle'> Goal Breakdown</div>
+<div style = "text-align: center; font-family: 'Exo'; font-size: 20px;" id = 'bodytitle_sub'> Source: <i>The Telegraph  </i> </div>
+
+
+<div class="parent5" id = 'bodydiv'>
+   
+    <div class="div9" id = 'ronbody' style = "height: 900px; width: 70%; text-align: center; overflow:auto;">
+      
+    </div>
+    
+    <div class="div10" id = 'mesbody' style = "height: 900px; width: 70%; text-align: center; overflow:auto;"> 
+        
+    </div>
+</div>
+
+<div id = 'procon'>
+    <img src = 'slides/procon.png' height = 930 width= 1450> </img> 
+</div>
+
+<div id = 'finalslide'>
+    <img src = 'slides/lastslide.png' height = 950 width= 1450> </img> 
+</div>
+
+
+
+
+
+<script>
+        
+        
+    Highcharts.chart('roncareer', {
+chart: {
+    type: 'timeline', 
+    style: {
+            fontFamily: 'Exo'
+        }, 
+
+        margin: [0, 20, 0, 0], 
+        marginTop:-100, 
+},
+plotOptions: {
+        series: {
+            groupPadding: 0
+        }
+    },
+
+xAxis: {
+    visible: false, 
+    type: 'datetime',
+},
+yAxis: {
+    visible: false
+},
+title: {
+    text: '', 
+    align: 'left', 
+    
+    style: {
+        color: 'black',
+        fontWeight: 900,
+        fontSize: 24, 
+    }
+   
+},
+colors: [
+    '#377e5a',
+    '#ca2e32',
+    '#c4c8da',
+    'black',
+    '#3B4A68',
+    '#363C46'
+],
+series: [{
+    data: [{
+        x: Date.UTC(2002, 1, 1),
+        name: 'Sporting CP',
+        label: '2002',
+        description: '',
+        color: '#377e5a',
+    }, {
+        x: Date.UTC(2003, 1, 1),
+        name: 'Manchester United',
+        label: '2003',
+        description: '', 
+        color: '#ca2e32', 
+    }, {
+        x: Date.UTC(2009, 1, 1),
+        name: 'Real Madrid',
+        label: '2009',
+    }, {
+        x: Date.UTC(2018, 1, 1),
+        name: 'Juventus',
+        label: '2018 - Present',
+        description: ''
+    }]
+}]
+});
+
+
+
+
+
+Highcharts.chart('mescareer', {
+chart: {
+    type: 'timeline', 
+    style: {
+            fontFamily: 'Exo'
+        }, 
+
+        margin: [0, 20, 0, 0], 
+        marginTop:-100, 
+},
+plotOptions: {
+        series: {
+            groupPadding: 0
+        }
+    },
+
+xAxis: {
+    visible: false, 
+    type: 'datetime',
+},
+yAxis: {
+    visible: false
+},
+title: {
+    text: '', 
+    align: 'left', 
+    
+    style: {
+        color: 'black',
+        fontWeight: 900,
+        fontSize: 24, 
+    }
+   
+},
+colors: [
+    '#661a36',
+    '#661a36',
+],
+series: [{
+    data: [{
+        x: Date.UTC(2004, 1, 1),
+        name: 'FC Barcelona',
+        label: '2004',
+        description: '',
+    }, {
+        x: Date.UTC(2020, 1, 1),
+        name: 'FC Barcelona',
+        label: 'Present',
+        description: '',
+    }]
+}]
+});
+
+    </script>
+
+<script>
+Highcharts.chart('chartINT1', {
+    chart: {
+        type: 'column', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        }, 
+    },
+    title: {
+        text: 'International Goals by FIFA Ranking', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 35, 
+        }, 
+    },
+    subtitle: {
+        text: 'Source: <i> Transfermarkt </i>', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 15, 
+        }, 
+    },
+    xAxis: {
+        categories: [
+           '0-10', 
+           '10-20', 
+           '20-30',   
+					'30-40',
+					'40-50',     
+					'50+', 
+        ],
+        
+        title: {
+            text: 'FIFA Ranking'
+        },
+        
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Goals'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.0f} goals</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [ {
+        name: 'Ronaldo',
+        data: [ 6,  8, 11,  4,  3, 33], 
+        color: '#c82b36',
+
+    }, 
+    {
+        name: 'Messi',
+        data:[11,  9,  6,  5,  5, 15], 
+        color: '#404d83',
+
+    }]
+});
+
+
+
+Highcharts.chart('ronpie', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie', 
+        margin: [0, 0, 0, 20], 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        }, 
+    },
+    title: {
+        text: 'Ronaldo', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 35, 
+        }, 
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f} %</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Goals',
+        colorByPoint: true,
+        data: [{
+            name: 'Competitive',
+            y: 80,
+            sliced: true,
+            selected: true, 
+            color: '#0c8514'
+        }, {
+            name: 'Friendly',
+            y: 20, 
+            color: '#dec014', 
+        }]
+    }]
+});
+
+
+Highcharts.chart('mespie', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie', 
+        margin: [0, 0, 0, 20],
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+    },
+    title: {
+        text: 'Messi', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 35, 
+        }, 
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f} %</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Goals',
+        colorByPoint: true,
+        data: [{
+            name: 'Competitive',
+            y: 57,
+            sliced: true,
+            selected: true, 
+            color: '#0c8514'
+        }, {
+            name: 'Friendly',
+            y: 43, 
+            color: '#dec014', 
+        }]
+    }]
+});
+
+
+
+
+Highcharts.chart('chartINT3', {
+    chart: {
+        type: 'column', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        }, 
+    },
+    title: {
+        text: 'Final Tournaments Performance', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 35, 
+        }, 
+    },
+    subtitle: {
+        text: 'Source: <i> BBC Sports </i>', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 15, 
+        }, 
+    },
+    xAxis: {
+        categories: [
+            ''
+        ],
+        title: {
+        text: 'Player',
+        
+        },
+        
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Goals per Game (%)'
+        }
+    },
+  
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Ronaldo',
+        data: [48], 
+        color: '#c82b36',
+    }, {
+        name: 'Messi',
+        data: [33], 
+        color: '#404d83',
+    }]
+});
+
+
+Highcharts.chart('chartLEG1', {
+    chart: {
+        type: 'line', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        }, 
+    },
+    title: {
+        text: 'Goal Contribution per Season', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 35, 
+        }, 
+    },
+    subtitle: {
+        text: 'Source: <i> Transfermarkt </i>', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 15, 
+        }, 
+    },
+    xAxis: {
+        categories: ['2009/2010', '2010/2011', '2011/2012', '2012/2013', '2013/2014',
+       '2014/2015', '2015/2016', '2016/2017', '2017/2018'],
+       title: {
+            text: 'Season'
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Goal Contribution per Game'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: false
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Ronaldo',
+        data: [1.14, 1.47, 1.53, 1.29, 1.33, 1.83, 1.28, 1.07, 1.15],
+       
+       color: '#c82b36', 
+    }, {
+        name: 'Messi',
+        data:[1.26, 1.48, 1.78, 1.81, 1.26, 1.61, 1.27, 1.35, 1.28],
+       
+       color: '#404d83',
+    }], 
+    
+});
+
+
+Highcharts.chart('chartUCL1', {
+    chart: {
+        type: 'line', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        }, 
+    },
+    title: {
+        text: 'Goal Contribution per Season', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 35, 
+        }, 
+    },
+    subtitle: {
+        text: 'Source: <i> The Stats Zone </i>', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 15, 
+        }, 
+    },
+    xAxis: {
+        categories: ['2009/2010', '2010/2011', '2011/2012', '2012/2013', '2013/2014',
+       '2014/2015', '2015/2016', '2016/2017', '2017/2018'],
+       title: {
+            text: 'Season'
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Goal Contribution'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: false
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Ronaldo',
+        data: [ 7, 10, 13, 13, 21, 13, 20, 18, 18],
+       
+       color: '#c82b36', 
+    }, {
+        name: 'Messi',
+        data:[ 8, 15, 19, 10,  8, 15,  7, 13,  8],
+       
+       color: '#404d83',
+    }], 
+    
+});
+
+
+Highcharts.chart('mespyramid', {
+    chart: {
+        type: 'pyramid', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+        // margin: [0, 0, 0, 0], 
+    },
+    title: {
+        text: 'Messi',
+        x: -50, 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+    },
+    plotOptions: {
+        series: {
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>',
+                softConnector: false, 
+            },
+         pyramid: {
+            // shared options for all pyramid series
+            colors: ['red', 'green', 'blue', 'orange', 'pink'],
+        },
+        
+       
+            center: ['40%', '50%'],
+            width: '80%'
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    series: [{
+        name: 'Number of Goals',
+        data: [
+            ['Group Stage',     68],
+            ['Round of 16',     26],
+            ['Quarter Final', 12],
+            ['Semi Final',    6],
+            ['Final',          2]
+        ], 
+      colors: ['#046bb0', '#04b02c', '#f5cc00', '#e31809', '#000000'],
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                plotOptions: {
+                    series: {
+                        dataLabels: {
+                            inside: true
+                        },
+                        center: ['40%', '50%'],
+                        width: '100%'
+                    }
+                }
+            }
+        }]
+    }
+});
+
+
+Highcharts.chart('ronpyramid', {
+    chart: {
+        type: 'pyramid', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+    },
+    title: {
+        text: 'Ronaldo',
+        x: -50,
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+    },
+        
+        plotOptions: {
+      
+        series: {
+          dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b> ({point.y:,.0f})',
+                softConnector: true, 
+            },
+         pyramid: {
+            // shared options for all pyramid series
+            // colors: ['red', 'green', 'blue', 'orange', 'pink'],
+            // connectorColor: '#00FFFFFF', 
+        },
+        
+       
+            center: ['40%', '50%'],
+            width: '80%', 
+            dataLabels: {align: 'right'}, 
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    series: [{
+        name: 'Number of Goals',
+        data: [
+            ['Group Stage',     62],
+            ['Round of 16',     23],
+            ['Quarter Final', 25],
+            ['Semi Final',    13],
+            ['Final',          4]
+        ], 
+      colors: ['#046bb0', '#04b02c', '#f5cc00', '#e31809', '#000000'],
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                plotOptions: {
+                    series: {
+                        dataLabels: {
+                            inside: true
+                        },
+                        center: ['50%', '50%'],
+                        width: '100%'
+                    }
+                }
+            }
+        }]
+    }
+});
+
+
+Highcharts.chart('mesbody', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },
+    },
+    title: {
+        text: 'Messi', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f} %</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Goals',
+        colorByPoint: true,
+        data: [{
+            name: 'Left Foot',
+            y: 569,
+            sliced: true,
+            selected: true, 
+            color: '#0c8514'
+        }, {
+            name: 'Right Foot',
+            y: 88, 
+            color: '#dec014', 
+        }, {
+            name: 'Head',
+            y: 24, 
+            color: 'red', 
+        }]
+    }]
+});
+
+
+Highcharts.chart('ronbody', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        }, 
+    },
+    title: {
+        text: 'Ronaldo', 
+        style: {
+            fontFamily: 'Exo', 
+            fontSize: 25, 
+        },  
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f} %</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Goals',
+        colorByPoint: true,
+        data: [{
+            name: 'Left Foot',
+            y: 127,
+            sliced: true,
+            selected: true, 
+            color: '#0c8514'
+        }, {
+            name: 'Right Foot',
+            y: 450, 
+            color: '#dec014', 
+        }, {
+            name: 'Head',
+            y: 127, 
+            color: 'red', 
+        }]
+    }]
+});
+
+
+</script>
+
+<script> 
+$('#toint').on("click", function() {
+  document.querySelector('#pictureINT').scrollIntoView({ 
+  behavior: 'smooth' 
+});
+});
+</script>
+
+<script> 
+$('#fromINT').on("click", function() {
+  document.querySelector('#chartINT1').scrollIntoView({ 
+  behavior: 'smooth' 
+});
+});
+</script>
+
+
+<script> 
+    $('#toleague').on("click", function() {
+      document.querySelector('#pictureLEG').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#fromLEG').on("click", function() {
+      document.querySelector('#chartLEG1').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+
+<script> 
+    $('#toucl').on("click", function() {
+      document.querySelector('#pictureUCL').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#fromucl').on("click", function() {
+      document.querySelector('#chartUCL1').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#tobody').on("click", function() {
+      document.querySelector('#picturebody').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#frombody').on("click", function() {
+      document.querySelector('#bodytitle').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+
+<script> 
+    $('#toparent').on("click", function() {
+      document.querySelector('#mesronpie').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#tochartINT3').on("click", function() {
+      document.querySelector('#chartINT3').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#toparent2').on("click", function() {
+      document.querySelector('#leagtroph').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+<script> 
+    $('#toparent3').on("click", function() {
+      document.querySelector('#pressure').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+
+<script> 
+    $('#toparent4').on("click", function() {
+      document.querySelector('#cltroph').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    });
+</script>
+
+
+
+
+
+
+
+<script>  AOS.init(); </script>
+
+</body>
+
+</HTML>
